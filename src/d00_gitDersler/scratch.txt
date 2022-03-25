@@ -1,0 +1,68 @@
+TOKEN : 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
+Mac fider: keychain
+mac icin SSH olusturma: http://burnedpixel.com/blog/setting-up-git-and-github-on-your-mac/#generatenewkey
+
+
+Windows : cd - dir - cls   - mkdir gitdersi - cd gitdersi - echo yazilacakyazi > necati.txt
+Mac     : cd - ls - clear - mkdir gitdersi - cd gitdersi - echo yazilacakyazi > necati.txt
+
+Windows : more necati.txt - ren necati.txt yigit.txt
+Mac     : more necati.txt - mv necati.txt yigit.txt
+
+Windows : del yigit.txt - dir
+Mac     : rm yigit.txt - ls
+
+Windows : cd     -
+Mac     : pwd  - cd deneme2 - feridun$ cat > suna.txt - yazilacakyaziyaz - cmd+d - cat suna.txt - mv suna.txt bahattin.txt - ls
+
+echo bu dosyayi ikinci ders icin kullanacagiz > dene.sh
+more dene.sh
+
+echo Bu dosyada burada dursun > metin.txt
+
+
+
+*** GIT HUB a DOSYA GONDERME*****
+*** SIRASI ILE ASAGIDAKI ISLEMLERI YAPIYORUZ TERMINALDE**** (Mac Terminal)
+
+git init |  (working space olusturuyoruz)
+git add yavuz.txt  | (hepsini yollamak icin git add (add den sonra bosluk)
+git config user.email javafadu@gmail.com | github daki e-mail adresi
+git config user.name javafadu | github daki username
+
+git config --global user.name "javafadu"
+git config --global user.email "javafadu@gmail.com"
+git config --global color.ui true
+
+git status |
+git commit -m “bu bizim ilk commitimiz” |
+git log |
+git show 5d6d7 | (commit 5d6d775dbf423cf5ac3b59626d54401a90fd2a27 ilk 5 karakter)
+git remote add origin https://github.com/javafadu/deneme.git | fatal error olursa once sunu yaz :
+                                                               git remote rm origin
+git remote add origin git@github.com:javafadu/projeler.git | SSH linkini push edeceksin hata verirse, sonra sifre
+git push --set-upstream origin master
+
+// Staging Area'Daki dosyalari iptal etmek için:
+git restore --staged selam1.txt | git.add ile eklenmis dosyayi geri alma
+git status | iptal edilmis mi bakmak icin
+
+// Commit store'dan silmek istiyorsan
+git checkout faa24 | faa24 = (origin/master) codu'nun ilk 5 hanesini aldik
+git reset –hard | yaptigin tum islerin kalici olmasi icin
+
+
+*** GIT HUB dan LOCAL e DOSYA ALMA*****
+git clone https://github.com/talfik2/dtc_adaboost_tpot_classfier_with_cabdata.git
+git pulls
+
+
+****GIT HUB LOCAL REMOTE BRANCH******
+git branch | hangi branchte oldugumuzu gosterir
+git checkout master | master branch ine gecis YAPIYORUZ
+git branch | yesil yazi nerde ise ordayiz
+git branch yenibranch | yeni branch olusturuyoruz
+git checkout yenibranch | yeni branch e geciyoruz
+git branch -m YeniB | branch in ismini degistirmek
+git branch -a | local ve remote daki branchleri gosterir
+git branch -d YeniB | YeniB branchini siler
