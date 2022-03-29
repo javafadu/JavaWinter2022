@@ -12,9 +12,9 @@ boolean elektrikliMi;
 int yil;
 String yakit;
 
+
 // arabanin turune gore method
 boolean otomatikPilot = otomatikPilotSorgusu();
-
 int maxHiz = maxHizAta();
 
     public Volvo(String mdl, boolean elk, int yl, String ykt) {
@@ -23,6 +23,8 @@ int maxHiz = maxHizAta();
         elektrikliMi = elk;
         yil = yl;
         yakit = ykt;
+        maxHiz= maxHizAta();
+        otomatikPilot=otomatikPilotSorgusu();
 
     }
     // parametreli constructor olusturmustuk

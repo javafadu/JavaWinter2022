@@ -11,5 +11,8 @@ public class VolvoRunner2 {
 
         System.out.println(arb1);
 
+        Volvo arb2 = new Volvo("XC90", true, 2021, "Elektrikli");
+        System.out.println(arb2);
+
     }
 }

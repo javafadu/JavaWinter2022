@@ -41,7 +41,8 @@ git show 5d6d7 | (commit 5d6d775dbf423cf5ac3b59626d54401a90fd2a27 ilk 5 karakter
 git remote add origin https://github.com/javafadu/deneme.git | fatal error olursa once sunu yaz :
                                                                git remote rm origin
 git remote add origin git@github.com:javafadu/projeler.git | SSH linkini push edeceksin hata verirse, sonra sifre
-git push --set-upstream origin master
+git push --set-upstream origin master | master veya hangi branch ise onun adini ver (branch kismi asagida)
+
 
 // Staging Area'Daki dosyalari iptal etmek için:
 git restore --staged selam1.txt | git.add ile eklenmis dosyayi geri alma
