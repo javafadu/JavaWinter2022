@@ -23,9 +23,9 @@ public class C02_ForEachLoop {
         // sayilar listesinde 3 e bolunemeyen sayilari yazdiralim
 
         for (int each : sayilar
-             ) {
-            if(each%3!=0) {
-                System.out.print(each+" ");
+        ) {
+            if (each % 3 != 0) {
+                System.out.print(each + " ");
             }
         }
 
