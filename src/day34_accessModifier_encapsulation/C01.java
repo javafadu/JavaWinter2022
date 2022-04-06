@@ -5,6 +5,7 @@ public class C01 {
     static int acikSayi=20;  // access modifier'i default Access Modifier
     String acikString="Hi"; // access modifier'i default Access Modifier
     public static int halkaAcikSayi=15;
+    protected static int aileyeOzel = 40;
     protected C01(){
         // bu constructor'in access modifier'i
         // default access modifier'dir

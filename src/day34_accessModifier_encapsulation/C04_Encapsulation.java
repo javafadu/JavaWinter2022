@@ -9,11 +9,15 @@ public class C04_Encapsulation {
                methodlarini olustururuz.
            Bir variable icin hem getter hem setter olusturursaniz
            o variable public olmus gibi hem okuyup hem de yazilmasini saglayabilirsiniz
+
+           Piyasada develeoper lar icin genel uygulamadir
+
          */
         C03 obj =new C03();
         System.out.println(obj.getSayi()); // 0
-        obj.setStr("Java Java Java");
-        System.out.println(obj.getStr()); // Java Java Java
-        System.out.println(obj); // sayi=0, str=Java Java Java
+
+        obj.setStr("Java cok guzel");
+        System.out.println(obj.getStr()); // Java cok guzel
+        System.out.println(obj); // sayi=0, str='Java cok guzel
     }
 }
