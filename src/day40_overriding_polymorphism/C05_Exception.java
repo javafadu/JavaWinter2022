@@ -12,6 +12,7 @@ public class C05_Exception {
         Scanner scan = new Scanner(System.in);
 
         int toplam=0;
+
         do {
             System.out.print("Lutfen toplamak istediginiz sayiyi giriniz \nbitirmek icin Q ya basiniz : ");
             int sayi = 0;
@@ -19,14 +20,21 @@ public class C05_Exception {
 
             try {
                 sayi = scan.nextInt();
+                toplam+=sayi;
             } catch (InputMismatchException e) {
 
+                String hataliGiris=scan.next();
+                if(hataliGiris.equalsIgnoreCase("q")) {
+                    break;
+                } else {
+                    System.out.println("Hatali giris");
+                }
             }
 
 
-            toplam+=sayi;
+
         } while (toplam<500);
 
-
+        System.out.println("Girdiginiz sayilarin toplami : "+toplam);
     }
 }
