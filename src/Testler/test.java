@@ -2,19 +2,22 @@ public class test {
 
     public static void main(String[] args) {
 
-        String s="Hello";
+            try {
 
-        String t= new String(s);
+                calis();
 
-        if ("Hello".equals(s)) System.out.println("one");
+            } catch (Exception e) {
 
-        if(t==s)System.out.println("two");
+                System.out.println(e.getMessage());
 
-        if(t.equals(s)) System.out.println("three");
+            }
 
-        if("Hello"==s)System.out.println("four");
+        }
 
-        if("Hello"==t)System.out.println("five");
+
+    private static void calis() {
+
+        throw new RuntimeException("Çoook çalış");
 
     }
 }
